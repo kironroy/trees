@@ -1,4 +1,4 @@
-# A treasure trove of resources on trees, especially the majestic redwoods! Here's a quick rundown of what you have:
+# 🌲 A treasure trove of resources on trees, especially the majestic redwoods!
 
 ## 🔗 [The Link](https://treesinfo.netlify.app/)
 
@@ -92,4 +92,3 @@
 
 - **Charles Hurwitz, Maxxam**
 
-That's quite an impressive collection! If you need any specific information or help with any of these resources, feel free to ask. 🌲
