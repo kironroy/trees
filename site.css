@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "DM Sans";
+  font-display: swap;
+  font-weight: 400;
+  src: url("/trees/dm-sans-v15-latin-regular.woff2")
+    format("woff");
+}
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  --headers: #95e5ad;
+  --dark-background-color: #2d333b;
+  --dark-headers-color: #1c2025;
+  --light-button-color: #844356;
+  --search-br-color: #c3cccc;
+  --light-hover-color: #438471;
+  --bkgrd-color: #adffe6;
+  --email-btn-color: #844356;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  letter-spacing: -0.3px;
+  background: var(--bkgrd-color);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  background-image: url('trees_banner.webp'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+.book {
+  font-style: italic;
+}
+
+img {
+  margin-top: 20px;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+}
+
+input {
+  border: solid 2px var(--search-br-color);
+  font-family: 'DM Sans', sans-serif;
+  color: #222;
+}
+
+#total-item-count,
+#total-cost,
+#total-mike-cost {
+  color: #1a73eb;
+  font-weight: bold;
+}
+
+#buttonInput {
+  letter-spacing: -0.9px;
+  border-radius: 40px;
+  border: solid var(--email-btn-color);
+  background-color: var(--email-btn-color);
+  color: #f4f4f4;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: 0 8px 9px -9px #090909cc;
+}
+
+.center-items {
+  text-align: center;
+}
+
+#total-links,
+#total-books {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+}
+#ritaInput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  font-size: 15px;
+  border-radius: 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+#ritaList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+#ritaList li a {
+  border: 1px dotted #d1d1d1;
+  margin-top: -1px;
+  background-color: #ebfff9;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #222;
+  display: block;
+  text-transform: capitalize;
+}
+
+#ritaList li a:hover:not(.header) {
+  background-color: var(--light-hover-color);
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-background-color);
+    color: #fff;
+  }
+
+  #topBtn {
+    background-color: var(--headers);
+    border: solid 2px var(--headers);
+    color: var(--dark-background-color);
+  }
+
+  #buttonInput {
+    background-color: var(--headers);
+    border: solid 2px var(--headers);
+    color: var(--dark-background-color);
+  }
+
+  input {
+    border: solid 2px var(--search-br-color);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  a {
+    color: var(--headers);
+  }
+
+  #ritaList li a {
+    border: 1px dotted var(--dark-background-color);
+    background-color: var(--dark-headers-color);
+    color: var(--headers);
+  }
+
+  #ritaList li a:hover:not(.header) {
+    background-color: #d9d9ff;
+    color: #222;
+    font-weight: bold;
+  }
+
+  #ritaInput {
+    background-color: #d9d9ff;
+    color: #222;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #222222;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  #buttonInput {
+    font-size: 20px;
+  }
+
+  #ritaList li a {
+    font-size: 20px;
+  }
+}
