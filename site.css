@@ -20,6 +20,8 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,14 +30,16 @@ body {
   box-sizing: border-box;
   letter-spacing: -0.3px;
   background: var(--bkgrd-color);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
   font-weight: 400;
   font-size: 50px;
-  letter-spacing: 2px;
   font-family: 'DM Sans', sans-serif;
+  padding: 0;
 }
 
 .banner {
@@ -94,6 +98,10 @@ input {
   text-align: center;
 }
 
+.search-div {
+  padding: 20px;
+}
+
 #total-links,
 #total-books {
   text-align: center;
@@ -102,8 +110,8 @@ input {
 }
 #ritaInput {
   width: 100%;
-  padding: 12px 20px;
-  margin: 20px 0;
+  padding: 12px 25px;
+
   font-size: 15px;
   border-radius: 40px;
   box-sizing: border-box;
@@ -141,7 +149,7 @@ input {
     color: #fff;
   }
 
-  .banner{
+  .banner {
     width: 100%;
     height: 200px; /* Adjust the height as needed */
     background-image: url('trees_night.webp'); /* Replace with your image URL */
