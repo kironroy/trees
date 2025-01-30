@@ -62,7 +62,7 @@ img {
 }
 
 input {
-  border: solid 2px var(--search-br-color);
+  border: solid 2px var(--light-hover-color);
   font-family: 'DM Sans', sans-serif;
   color: #222;
 }
@@ -148,6 +148,11 @@ input {
     background: var(--dark-background-color);
     color: #fff;
   }
+
+  input {
+  border: solid 2px var(--headers);
+ 
+}
 
   .banner {
     width: 100%;
