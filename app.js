@@ -1,7 +1,6 @@
 'use strict';
 const element = document.body;
 
-
 // Instead of querying elements inside the loop
 // fetch them beforehand and store them in variables:
 
@@ -19,9 +18,9 @@ function searchRitaList() {
 // This reduces the number of times the DOM is accessed
 // Making it more efficient.
 
-// This waits 300ms after the user stops typing before 
+// This waits 300ms after the user stops typing before
 // triggering the search.
-// more efficient 
+// more efficient
 
 let debounceTimer;
 document.getElementById('ritaInput').addEventListener('input', () => {
@@ -29,7 +28,7 @@ document.getElementById('ritaInput').addEventListener('input', () => {
   debounceTimer = setTimeout(searchRitaList, 300);
 });
 
-
+// How many books, links?
 
 // Function to count occurrences of a class
 function countClassOccurrences(className) {
