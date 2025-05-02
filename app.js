@@ -1,19 +1,35 @@
 'use strict';
 const element = document.body;
 
+
+// Instead of querying elements inside the loop
+// fetch them beforehand and store them in variables:
+
 function searchRitaList() {
-  const input = document.getElementById('ritaInput');
-  const filter = input.value.toUpperCase();
-  const ul = document.getElementById('ritaList');
-  const li = ul.getElementsByTagName('li');
-  for (let i = 0; i < li.length; i++) {
-    const a = li[i].getElementsByTagName('a')[0];
-    const textValue = a.textContent || a.innerText;
-    textValue.toUpperCase().indexOf(filter) > -1
-      ? (li[i].style.display = '')
-      : (li[i].style.display = 'none');
-  }
+  const input = document.getElementById('ritaInput').value.toUpperCase();
+  const items = document.querySelectorAll('#ritaList li a');
+
+  items.forEach(a => {
+    a.parentElement.style.display = a.textContent.toUpperCase().includes(input)
+      ? ''
+      : 'none';
+  });
 }
+
+// This reduces the number of times the DOM is accessed
+// Making it more efficient.
+
+// This waits 300ms after the user stops typing before 
+// triggering the search.
+// more efficient 
+
+let debounceTimer;
+document.getElementById('ritaInput').addEventListener('input', () => {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(searchRitaList, 300);
+});
+
+
 
 // Function to count occurrences of a class
 function countClassOccurrences(className) {
