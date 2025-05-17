@@ -754,33 +754,4 @@ document.getElementById(
   'total-height-of-thick-slim-trees'
 ).innerHTML = ` Total thick and slim trees added together: ${totalThickAndThin} feet tall.`;
 
-// -- UX FEATURES --
 
-// dark mode
-
-const element = document.body;
-const goToTopButton = document.getElementById('topBtn');
-
-const darkOrLightMode = () => element.classList.toggle('dark-mode');
-
-document
-  .getElementById('buttonInput')
-  .addEventListener('click', function (event) {
-    event.target.value === 'Dark Mode'
-      ? (event.target.value = 'Light Mode')
-      : (event.target.value = 'Dark Mode');
-  });
-
-window.onscroll = () => scrollFunction();
-
-const scrollFunction = () =>
-  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
-    ? (goToTopButton.style.display = 'block')
-    : (goToTopButton.style.display = 'none');
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-topFunction();
