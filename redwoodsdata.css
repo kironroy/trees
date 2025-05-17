@@ -34,47 +34,22 @@ main {
 
 /* General button styling */
 #backToTrees {
-  padding: 12px 24px;
+  padding: 15px 24px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
   text-transform: capitalize;
-  margin-bottom: 10px;
-}
-
-/* Light Mode */
-#backToTrees {
+  margin-bottom: 20px;
   background-color: var(--light-button-color);
+  border: none;
+  box-shadow: none;
   color: var(--html-bk-color);
-  border: 2px solid var(--table-light-header-color);
 }
 
 #backToTrees:hover {
   background-color: var(--highlight-color-light);
   color: var(--text-color);
-}
-
-#topBtn {
-  font-family: monospace;
-  display: none;
-  position: fixed;
-  font-size: 36px;
-  bottom: 20px;
-  right: 10px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: var(--light-button-color);
-  color: var(--html-bk-color);
-  cursor: pointer;
-  padding-top: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 5px;
-  border-radius: 6px;
-  opacity: 80%;
 }
 
 #trees-total {
@@ -240,11 +215,6 @@ img {
     background-color: var(--dark-headers-color);
   }
 
-  #buttonInput {
-    background-color: var(--highlight-color-dark);
-    border: solid var(--headers);
-    color: var(--dark-background-color);
-  }
 
   #column-titles {
     font-weight: bold;
@@ -288,8 +258,7 @@ img {
 
   #backToTrees {
     background-color: var(--highlight-color-dark);
-    color: var(--text-color);
-    border: 2px solid var(--dark-headers-color);
+    color: var(--dark-headers-color);
   }
 
   #backToTrees:hover {
