@@ -8,13 +8,15 @@
 :root {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  --headers: #95e5ad;
-  --dark-background-color: #2d333b;
-  --dark-headers-color: #1c2025;
+  --headers: #4a7c59;
+  --dark-background-color: #1e1e2f;
+  --dark-headers-color: #292d3e;
   --light-button-color: #844356;
-  --search-br-color: #c3cccc;
+  --search-br-color: #d9d9ff;
+  --drk-search-br-color: #3273dc;
+  --drk-search-box: #d9d9ff;
   --light-hover-color: #4d0000;
-  --bkgrd-color: #adffe6;
+  --bkgrd-color: #eee;
   --email-btn-color: #844356;
 }
 
@@ -62,7 +64,7 @@ img {
 }
 
 input {
-  border: solid 2px var(--light-hover-color);
+  border: solid 1px var(--bkgrd-color);
   font-family: 'DM Sans', sans-serif;
   color: #222;
 }
@@ -111,11 +113,11 @@ input {
 #ritaInput {
   width: 100%;
   padding: 12px 25px;
-
   font-size: 15px;
   border-radius: 40px;
   box-sizing: border-box;
   background-color: #fff;
+  border: solid 2px var(--drk-search-br-color);
 }
 
 #ritaList {
@@ -137,8 +139,8 @@ input {
 }
 
 #ritaList li a:hover:not(.header) {
-  background-color: var(--light-hover-color);
-  color: yellow;
+  background-color: var(--dark-background-color);
+  color: var(--bkgrd-color);
   font-weight: 600;
   font-family: 'DM Sans', sans-serif;
 }
@@ -148,8 +150,6 @@ input {
     background: var(--dark-background-color);
     color: #fff;
   }
-
-
 
   .banner {
     width: 100%;
@@ -171,8 +171,6 @@ input {
     color: var(--dark-background-color);
   }
 
-
-
   a {
     color: var(--headers);
   }
@@ -184,14 +182,15 @@ input {
   }
 
   #ritaList li a:hover:not(.header) {
-    background-color: #d9d9ff;
-    color: #222;
+    background-color: var(--drk-search-box);
+    color: #2c2c2c;
     font-weight: bold;
   }
 
   #ritaInput {
-    border: solid 2px var(--search-br-color);
+    border: solid 2px var(--drk-search-br-color);
     color: #222;
+    background-color: var(--drk-search-box);
   }
 
   ::-webkit-input-placeholder {
