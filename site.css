@@ -47,7 +47,7 @@ h1 {
 .banner {
   width: 100%;
   height: 200px;
-  background-image: url('https://cdn.glitch.global/eca19aa0-f945-40db-8788-48ebea4c6689/trees_day.webp?v=1737168677153');
+  background-image: url('/trees_day.webp');
   background-size: cover;
   background-position: center;
 }
@@ -154,7 +154,7 @@ input {
   .banner {
     width: 100%;
     height: 200px;
-    background-image: url('https://cdn.glitch.global/eca19aa0-f945-40db-8788-48ebea4c6689/trees_night.webp?v=1737168674059');
+    background-image: url('/trees_night.webp');
     background-size: cover;
     background-position: center;
   }
